@@ -17,13 +17,14 @@
   grid-template: 1fr/1fr
 }
 
-blockquote,h1,h2,h3,h4,li,ol,p,ul {
+blockquote,fieldset,h1,h2,h3,h4,li,ol,p,ul {
   margin: 0;
   padding: 0
 }
 
 fieldset {
-  padding: 0
+  border: 0;
+  margin: 0 0 7px
 }
 
 ol,ul {
@@ -158,12 +159,7 @@ ol,ul {
   font-size: 18px;
   color: #fff;
   width: 225px;
-  font-family: "Fira Sans Condensed",sans-serif;
-}
-
-fieldset {
-  border: 0;
-  margin: 0 0 7px
+  font-family: "Fira Sans Condensed",sans-serif
 }
 
 .search-form__pseudo-checkbox:focus,.search-form__textfield:focus {
@@ -181,8 +177,11 @@ fieldset {
   text-decoration: underline
 }
 
+.search-form__checkbox-list {
+  display: flex
+}
+
 .search-form__checkbox-list,.search-form__label {
-  display: flex;
   flex-direction: row;
   justify-content: space-between
 }
@@ -195,7 +194,7 @@ fieldset {
   display: flex;
   align-items: center;
   margin-right: 15px;
-  cursor: pointer;
+  cursor: pointer
 }
 
 input[type=checkbox]+.search-form__pseudo-checkbox {
